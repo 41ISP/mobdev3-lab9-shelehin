@@ -1,10 +1,10 @@
-function Todo () {
+function Todo(props) {
     return (
         <div className="todo-item">
-                    <input type="checkbox" className="todo-checkbox" />
-                    <span className="todo-text">Изучить основы React</span>
-                    <button className="delete-btn">Удалить</button>
-                </div>
+            <input type="checkbox" className="todo-checkbox" />
+            <span className="todo-text">{props.name}</span>
+            <button className="delete-btn">Удалить</button>
+        </div>
     )
 }
 

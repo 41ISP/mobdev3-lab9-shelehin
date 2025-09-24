@@ -7,7 +7,7 @@ function App() {
         <div className="header">
             <h1>Todo App</h1>
             <p>Управляйте своими задачами</p>
-        </div>
+        </div>                                                            
 
       <TodoList />
     </div>
