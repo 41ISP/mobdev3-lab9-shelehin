@@ -1,9 +1,9 @@
-function Todo(props) {
+function Todo({name, toggleTodo, deleteTodo, id, done}) {
     return (
         <div className="todo-item">
-            <input type="checkbox" className="todo-checkbox" />
-            <span className="todo-text">{props.name}</span>
-            <button className="delete-btn">Удалить</button>
+            <input onChange={() => toggleTodo(id)} checked={done} type="checkbox" className="todo-checkbox" />
+            <span className="todo-text">{name}</span>
+            <button onClick={() => deleteTodo(id)} className="delete-btn">Удалить</button>
         </div>
     )
 }
